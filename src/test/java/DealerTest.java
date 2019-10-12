@@ -17,15 +17,32 @@ public class DealerTest {
     }
 
     @Test
-    public void checkHasCards() {
-        dealer.takeCard();
-        dealer.takeCard();
-        assertEquals(2, dealer.cardCount());
+    public void hasDeckOfCards() {
+        dealer.populateDeckOfCards();
+        assertEquals(52, dealer.countDeck());
+    }
+
+    @Test public void canShuffle() {
+        dealer.shuffleDeck();
+        assertEquals(true, dealer.checkIfShuffled());
+    }
+
+    @Test
+    public void canDealCardtoSelf() {
+        dealer.dealCardtoSelf(5);
+        assertEquals(5, dealer.countOwnCards());
     }
 
 //    @Test
-//    public void canTakeTopCard() {
+//    public void checkHasCards() {
 //        dealer.takeCard();
+//        dealer.takeCard();
+//        assertEquals(2, dealer.cardCount());
+//    }
+
+//    @Test
+//    public void canTakeTopCard() {
+//        dealer.takeTopCard();
 //        assertEquals(1, dealer.cardCount());
 //    }
 

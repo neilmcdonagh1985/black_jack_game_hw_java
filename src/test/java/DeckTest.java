@@ -44,4 +44,10 @@ public class DeckTest {
         assertEquals(5, player1.cardCount());
     }
 
+    @Test
+    public void canPickTopCard() {
+        deck.pickTopCard();
+        assertEquals(1, deck.pickedCardCount());
+    }
+
 }

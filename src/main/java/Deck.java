@@ -7,15 +7,21 @@ public class Deck {
     private ArrayList<Card> cards;
     private ArrayList<String> suits;
     private Player player;
+    private ArrayList<Card> pickedCards;
 
 
     public Deck(){
         this.cards = new ArrayList<Card>();
+        this.pickedCards = new ArrayList<Card>();
 
     }
 
     public int cardCount() {
         return this.cards.size();
+    }
+
+    public int pickedCardCount() {
+        return this.pickedCards.size();
     }
 
 
@@ -52,8 +58,10 @@ public class Deck {
     public Card pickTopCard() {
         this.populateDeck();
         this.shuffle();
-        Card pickedCard = this.cards.get(0);
-        return pickedCard;
+        Card chosenCard = this.cards.get(0);
+        pickedCards.add(chosenCard);
+        return chosenCard;
+
     }
 
     public void deal(Player player, int numberOfCards) {
