@@ -46,12 +46,4 @@ public class PlayerTest {
 
    }
 
-//   @Test
-//    public void canReceiveCard() {
-//        deck.deal();
-//
-//   }
-
-
-
 }
