@@ -35,14 +35,13 @@ public class DeckTest {
 
     @Test
     public void canShuffleCards() {
-        deck.populateDeck();
         assertEquals(true, deck.shuffle());
     }
 
     @Test
     public void canDeal() {
-        deck.deal(player1, 2);
-        assertEquals(2, player1.cardCount());
+        deck.deal(player1, 5);
+        assertEquals(5, player1.cardCount());
     }
 
 }

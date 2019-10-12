@@ -38,6 +38,7 @@ public class Deck {
     }
 
     public boolean shuffle() {
+        this.populateDeck();
         Card unshuffledFirstCard = this.cards.get(0);
         Collections.shuffle(this.cards);
         Card shuffledFirstCard = this.cards.get(0);
@@ -46,6 +47,13 @@ public class Deck {
             return true;
         }
         return false;
+    }
+
+    public Card pickTopCard() {
+        this.populateDeck();
+        this.shuffle();
+        Card pickedCard = this.cards.get(0);
+        return pickedCard;
     }
 
     public void deal(Player player, int numberOfCards) {
