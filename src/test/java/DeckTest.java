@@ -41,8 +41,8 @@ public class DeckTest {
 
     @Test
     public void canDeal() {
-        deck.deal(player1);
-        assertEquals(1, player1.cardCount());
+        deck.deal(player1, 2);
+        assertEquals(2, player1.cardCount());
     }
 
 }

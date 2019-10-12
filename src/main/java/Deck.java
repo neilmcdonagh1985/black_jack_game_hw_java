@@ -48,11 +48,16 @@ public class Deck {
         return false;
     }
 
-    public void deal(Player player) {
+    public void deal(Player player, int numberOfCards) {
         this.populateDeck();
         Collections.shuffle(this.cards);
-        Card dealtCard = this.cards.get(0);
-        player.addCard(dealtCard);
+
+        // for as many times as the numberOfCards passed in... do this...
+        for (int i = 0; i < numberOfCards; i++) {
+            Card dealtCard = this.cards.get(0);
+            player.addCard(dealtCard);
+        }
+
     }
 
 
