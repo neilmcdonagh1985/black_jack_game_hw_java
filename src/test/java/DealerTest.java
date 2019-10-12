@@ -51,10 +51,25 @@ public class DealerTest {
     @Test
     public void canDealCardsToPlayers() {
         player1 = new Player("Caoimhe");
+        player2 = new Player("Higgy");
         dealer.acceptNewOpponent(player1);
-        dealer.dealCardsToPlayers(3);
-        assertEquals(3, player1.cardCount());
+        dealer.acceptNewOpponent(player2);
+        dealer.dealCardsToPlayers(4);
+        assertEquals(4, player2.cardCount());
     }
+
+    @Test
+    public void canStartBlackJack() {
+        player1 = new Player("Caoimhe");
+        player2 = new Player("Higgy");
+        dealer.acceptNewOpponent(player1);
+        dealer.acceptNewOpponent(player2);
+        dealer.startBlackJack();
+        assertEquals(2, dealer.countOwnCards());
+        assertEquals(2, player1.cardCount());
+        assertEquals(2, player2.cardCount());
+    }
+
 
 //    @Test
 //    public void checkHasCards() {

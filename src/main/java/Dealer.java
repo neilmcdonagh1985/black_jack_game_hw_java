@@ -57,7 +57,6 @@ public class Dealer {
     }
 
     public void dealCardtoSelf(int numberOfCards) {
-        this.populateDeckOfCards();
         this.shuffleDeck();
 
         for (int i = 0; i < numberOfCards; i++) {
@@ -78,10 +77,15 @@ public class Dealer {
             for(int i = 0; i < numberOfCards; i++) {
                 player.addCard(card);
             }
-            // for numberofcards passed in, player.addCard
-
         }
     }
+
+    public void startBlackJack() {
+        dealCardtoSelf(2);
+        dealCardsToPlayers(2);
+    }
+
+
 
 //    public void deal(int numberOfCards) {
 //        deck.shuffle();

@@ -11,11 +11,6 @@ public class Game {
         this.players = new ArrayList<Player>();
     }
 
-
-    public ArrayList<Player> getAllPlayers() {
-        return players;
-    }
-
     public int playerCount() {
         return players.size();
     }
@@ -24,21 +19,21 @@ public class Game {
         this.players.add(player);
     }
 
-    public Player play() {
-
-        int winningNumber = 0;
-        Player winner = null;
-        for (Player player :this.players ) {
-            Card card = player.getCards();
-            int playerCardValue = card.getValueFromEnum();
-            if (playerCardValue > winningNumber) {
-                winningNumber = playerCardValue;
-                winner = player;
-
-            }
-        }
-        return winner;
-    }
+//    public Player play() {
+//
+//        int winningNumber = 0;
+//        Player winner = null;
+//        for (Player player :this.players ) {
+//            Card card = player.getCards();
+//            int playerCardValue = card.getValueFromEnum();
+//            if (playerCardValue > winningNumber) {
+//                winningNumber = playerCardValue;
+//                winner = player;
+//
+//            }
+//        }
+//        return winner;
+//    }
 
 
 
