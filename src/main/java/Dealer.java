@@ -5,11 +5,13 @@ public class Dealer {
 
     private ArrayList<Card> ownCards;
     private ArrayList<Card> deckOfCards;
+    private ArrayList<Player> opponents;
 
 
     public Dealer() {
         this.ownCards = new ArrayList<Card>();
         this.deckOfCards = new ArrayList<Card>();
+        this.opponents = new ArrayList<Player>();
 
     }
 
@@ -19,6 +21,10 @@ public class Dealer {
 
     public int countOwnCards() {
         return this.ownCards.size();
+    }
+
+    public int countOpponents() {
+        return this.opponents.size();
     }
 
     public int populateDeckOfCards() {
@@ -60,8 +66,21 @@ public class Dealer {
         }
     }
 
-    public int cardCount() {
-        return ownCards.size();
+    public void acceptNewOpponent(Player player) {
+        this.opponents.add(player);
+    }
+
+
+    public void dealCardsToPlayers(int numberOfCards) {
+        this.shuffleDeck();
+        Card card = this.deckOfCards.get(0);
+        for (Player player : this.opponents) {
+            for(int i = 0; i < numberOfCards; i++) {
+                player.addCard(card);
+            }
+            // for numberofcards passed in, player.addCard
+
+        }
     }
 
 //    public void deal(int numberOfCards) {

@@ -35,7 +35,7 @@ public class PlayerTest {
 
    @Test
     public void canAddCard() {
-        assertEquals(card1, player1.addCard(card1));
+        player1.addCard(card1);
         assertEquals(card1, player1.getCards());
    }
 

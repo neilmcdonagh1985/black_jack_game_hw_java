@@ -31,9 +31,8 @@ public class Player {
         }
 
 
-        public Card addCard(Card card) {
+        public void addCard(Card card) {
             this.cards.add(card);
-            return card;
         }
 
 
