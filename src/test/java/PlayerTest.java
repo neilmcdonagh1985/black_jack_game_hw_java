@@ -8,12 +8,14 @@ public class PlayerTest {
     private Player player1;
     private Deck deck;
     private Card card1;
+    private Card card2;
 
     @Before
     public void before() {
         player1 = new Player("Tom");
         deck = new Deck();
         card1 = new Card(SuitType.SPADES, RankType.JACK);
+        card2 = new Card(SuitType.DIAMONDS, RankType.FIVE);
 
     }
 
@@ -42,8 +44,15 @@ public class PlayerTest {
    @Test
     public void canGetCards() {
         player1.addCard(card1);
+        player1.addCard(card2);
         assertEquals(card1, player1.getCards());
-
    }
+
+//   @Test
+//    public void canGetTotalValueOfCards() {
+//       player1.addCard(card1);
+//       player1.addCard(card2);
+//       assertEquals(15, player1.getTotalValueOfCards());
+//   }
 
 }

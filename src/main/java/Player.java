@@ -25,6 +25,22 @@ public class Player {
             return card;
         }
 
+        public ArrayList<Card> returnCards() {
+            return this.cards;
+//            ArrayList<Card> cards = new ArrayList<Card>();
+//            return(cards);
+        }
+
+
+
+//        public int getTotalValueOfCards() {
+//            int total = 0;
+//            for (Card card : this.cards) {
+//                total += card.getValueFromEnum();
+//            }
+//            return total;
+//        }
+
         public int cardCount() {
             return this.cards.size();
 
