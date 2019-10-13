@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DealerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="130">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#309#310#0" expanded="true" />
@@ -114,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dealer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+            <state relative-caret-position="295">
+              <caret line="125" column="33" lean-forward="true" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#243#244#0" expanded="true" />
@@ -136,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/DealerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+            <state relative-caret-position="481">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+            <state relative-caret-position="310">
+              <caret line="80" column="7" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,8 +193,8 @@
         <option value="$PROJECT_DIR$/src/test/java/DeckTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Deck.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Player.java" />
         <option value="$PROJECT_DIR$/src/test/java/DealerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dealer.java" />
@@ -298,7 +296,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DealerTest.canReturnHighestScoringPlayer">
+  <component name="RunManager" selected="JUnit.DealerTest.canFindHigherHand">
     <configuration name="All in CardGameLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -307,41 +305,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerTest.canReturnDealerTotal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DealerTest.canDeal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DealerTest" />
-      <option name="METHOD_NAME" value="canReturnDealerTotal" />
+      <option name="METHOD_NAME" value="canDeal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerTest.canReturnHighestScoringPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DealerTest.canDealToSelf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DealerTest" />
-      <option name="METHOD_NAME" value="canReturnHighestScoringPlayer" />
+      <option name="METHOD_NAME" value="canDealToSelf" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerTest.canReturnOpponentTotal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DealerTest.canDealtoOpponent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DealerTest" />
-      <option name="METHOD_NAME" value="canReturnOpponentTotal" />
+      <option name="METHOD_NAME" value="canDealtoOpponent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerTest.canReturnWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DealerTest.canFindHigherHand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DealerTest" />
-      <option name="METHOD_NAME" value="canReturnWinner" />
+      <option name="METHOD_NAME" value="canFindHigherHand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -349,11 +347,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DealerTest.canReturnHighestScoringPlayer" />
-        <item itemvalue="JUnit.DealerTest.canReturnWinner" />
-        <item itemvalue="JUnit.DealerTest.canReturnOpponentTotal" />
-        <item itemvalue="JUnit.DealerTest.canReturnDealerTotal" />
+        <item itemvalue="JUnit.DealerTest.canFindHigherHand" />
         <item itemvalue="JUnit.All in CardGameLab" />
+        <item itemvalue="JUnit.DealerTest.canDealToSelf" />
+        <item itemvalue="JUnit.DealerTest.canDealtoOpponent" />
+        <item itemvalue="JUnit.DealerTest.canDeal" />
       </list>
     </recent_temporary>
   </component>
@@ -371,35 +369,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_CardGameLab - 2019.10.13 at 11h 04m 33s.xml">
-      <configuration name="All in CardGameLab" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CardGameLab - 2019.10.13 at 11h 07m 46s.xml">
-      <configuration name="All in CardGameLab" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DealerTest_canReturnOpponentTotal - 2019.10.13 at 11h 08m 41s.xml">
-      <configuration name="DealerTest.canReturnOpponentTotal" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CardGameLab - 2019.10.13 at 11h 17m 37s.xml">
-      <configuration name="All in CardGameLab" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CardGameLab - 2019.10.13 at 11h 30m 58s.xml">
-      <configuration name="All in CardGameLab" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DealerTest_canReturnOpponentTotal - 2019.10.13 at 11h 39m 30s.xml">
-      <configuration name="DealerTest.canReturnOpponentTotal" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DealerTest_canReturnDealerTotal - 2019.10.13 at 11h 50m 10s.xml">
-      <configuration name="DealerTest.canReturnDealerTotal" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DealerTest_canReturnOpponentTotal - 2019.10.13 at 12h 01m 59s.xml">
-      <configuration name="DealerTest.canReturnOpponentTotal" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DealerTest_canReturnOpponentTotal - 2019.10.13 at 12h 02m 09s.xml">
       <configuration name="DealerTest.canReturnOpponentTotal" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DealerTest_canReturnWinner - 2019.10.13 at 12h 05m 32s.xml">
       <configuration name="DealerTest.canReturnWinner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DealerTest_canReturnHighestScoringPlayer - 2019.10.13 at 12h 06m 56s.xml">
+      <configuration name="DealerTest.canReturnHighestScoringPlayer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CardGameLab - 2019.10.13 at 12h 09m 01s.xml">
+      <configuration name="All in CardGameLab" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DealerTest_canDeal - 2019.10.13 at 12h 16m 38s.xml">
+      <configuration name="DealerTest.canDeal" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DealerTest_canDealtoOpponent - 2019.10.13 at 12h 26m 10s.xml">
+      <configuration name="DealerTest.canDealtoOpponent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DealerTest_canDealToSelf - 2019.10.13 at 12h 29m 37s.xml">
+      <configuration name="DealerTest.canDealToSelf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DealerTest_canFindHigherHand - 2019.10.13 at 13h 00m 56s.xml">
+      <configuration name="DealerTest.canFindHigherHand" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DealerTest_canFindHigherHand - 2019.10.13 at 13h 02m 23s.xml">
+      <configuration name="DealerTest.canFindHigherHand" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CardGameLab - 2019.10.13 at 13h 06m 28s.xml">
+      <configuration name="All in CardGameLab" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -415,7 +413,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30547947" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30547947" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -530,16 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DeckTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -602,6 +590,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="80" column="7" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RankType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -618,7 +626,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="130">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#309#310#0" expanded="true" />
@@ -628,20 +636,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RankType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dealer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+        <state relative-caret-position="295">
+          <caret line="125" column="33" lean-forward="true" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
@@ -660,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DealerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+        <state relative-caret-position="481">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

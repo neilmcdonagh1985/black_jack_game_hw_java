@@ -114,6 +114,39 @@ public class Dealer {
 //        return highestTotal;
         return highestScoringPlayer;
     }
+
+    public void dealToOpponent(Card card1, Card card2) {
+        for(Player player: this.opponents) {
+            player.receiveInitialBlackJackCards(card1, card2);
+        }
+    }
+
+    public void dealToSelf(Card card3, Card card4) {
+        this.ownCards.add(card3);
+        this.ownCards.add(card4);
+    }
+
+    public int findHigherHand() {
+        int dealerTotal = 0;
+        for (Card card : this.ownCards) {
+            dealerTotal += card.getValueFromEnum();
+        }
+        int playerTotal = 0;
+        for (Player player : this.opponents) {
+            for (Card card : player.returnCards()) {
+                playerTotal += card.getValueFromEnum();
+            }
+            if (dealerTotal > playerTotal) {
+                return dealerTotal;
+            }
+        }
+        return playerTotal;
+    }
+
+
+
+
+
 }
 
 

@@ -102,6 +102,44 @@ public class DealerTest {
         assertEquals(player1, dealer.returnHighestScoringPlayer());
     }
 
+    @Test
+    public void canDealtoOpponent() {
+        player2 = new Player("Higgy");
+        dealer.acceptNewOpponent(player2);
+        dealer.dealToOpponent(card1, card2);
+        assertEquals(2, player2.cardCount());
+    }
+
+    @Test
+    public void canDealToSelf() {
+        dealer.dealToSelf(card3, card4);
+        assertEquals(2, dealer.countOwnCards());
+    }
+
+    @Test
+    public void canFindHigherHand() {
+        player2 = new Player("Higgy");
+        dealer.acceptNewOpponent(player2);
+        dealer.dealToOpponent(card1, card2);
+        dealer.dealToSelf(card3, card4);
+        assertEquals(19, dealer.findHigherHand());
+    }
+
+    @Test
+    public void canRevealPersonWithHigherHand() {
+        player2 = new Player("Higgy");
+        dealer.acceptNewOpponent(player2);
+        dealer.dealToOpponent(card1, card2);
+        dealer.dealToSelf(card3, card4);
+        
+    }
+
+//    @Test
+//    public void canFindWinner() {
+//        dealer.acceptNewOpponent(player2);
+//
+//    }
+
 
     }
 

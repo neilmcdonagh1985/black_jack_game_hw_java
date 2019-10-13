@@ -51,6 +51,11 @@ public class Player {
             this.cards.add(card);
         }
 
+        public void receiveInitialBlackJackCards(Card card1, Card card2) {
+            this.cards.add(card1);
+            this.cards.add(card2);
+        }
+
 
 }
 
