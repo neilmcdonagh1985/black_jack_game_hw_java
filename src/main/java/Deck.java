@@ -25,10 +25,10 @@ public class Deck {
     }
 
 
-    public void addCardToDeck(Card cardParam) {
-        this.cards.add(cardParam);
-
-    }
+//    public void addCardToDeck(Card cardParam) {
+//        this.cards.add(cardParam);
+//
+//    }
 
     public int populateDeck() {
         for (SuitType suit : SuitType.values() ) {
@@ -43,26 +43,26 @@ public class Deck {
         return cardCount();
     }
 
-    public boolean shuffle() {
-        this.populateDeck();
-        Card unshuffledFirstCard = this.cards.get(0);
-        Collections.shuffle(this.cards);
-        Card shuffledFirstCard = this.cards.get(0);
+//    public boolean shuffle() {
+//        this.populateDeck();
+//        Card unshuffledFirstCard = this.cards.get(0);
+//        Collections.shuffle(this.cards);
+//        Card shuffledFirstCard = this.cards.get(0);
+//
+//        if (unshuffledFirstCard != shuffledFirstCard) {
+//            return true;
+//        }
+//        return false;
+//    }
 
-        if (unshuffledFirstCard != shuffledFirstCard) {
-            return true;
-        }
-        return false;
-    }
-
-    public Card pickTopCard() {
-        this.populateDeck();
-        this.shuffle();
-        Card chosenCard = this.cards.get(0);
-        pickedCards.add(chosenCard);
-        return chosenCard;
-
-    }
+//    public Card pickTopCard() {
+//        this.populateDeck();
+//        this.shuffle();
+//        Card chosenCard = this.cards.get(0);
+//        pickedCards.add(chosenCard);
+//        return chosenCard;
+//
+//    }
 
     public void deal(Player player, int numberOfCards) {
         this.populateDeck();

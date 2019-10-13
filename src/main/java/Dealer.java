@@ -31,7 +31,7 @@ public class Dealer {
         return this.opponents.size();
     }
 
-    public int populateDeckOfCards() {
+    public void populateDeckOfCards() {
         for (SuitType suit : SuitType.values()) {
             SuitType suit1 = suit;
             for (RankType rank : RankType.values()) {
@@ -39,9 +39,7 @@ public class Dealer {
                 Card newCard = new Card(suit1, rank1);
                 this.deckOfCards.add(newCard);
             }
-
         }
-        return countDeck();
     }
 
     public void shuffleDeck() {
@@ -60,33 +58,8 @@ public class Dealer {
         return false;
     }
 
-    public void dealCardtoSelf(int numberOfCards) {
-        this.shuffleDeck();
-
-        for (int i = 0; i < numberOfCards; i++) {
-            Card card = this.deckOfCards.get(0);
-            this.ownCards.add(card);
-        }
-    }
-
     public void acceptNewOpponent(Player player) {
         this.opponents.add(player);
-    }
-
-
-    public void dealCardsToPlayers(int numberOfCards) {
-        this.shuffleDeck();
-        Card card = this.deckOfCards.get(0);
-        for (Player player : this.opponents) {
-            for (int i = 0; i < numberOfCards; i++) {
-                player.addCard(card);
-            }
-        }
-    }
-
-    public void startBlackJack() {
-        dealCardtoSelf(2);
-        dealCardsToPlayers(2);
     }
 
     public int returnDealerTotal() {
@@ -97,23 +70,23 @@ public class Dealer {
         return dealerTotal;
     }
 
-    public Player returnHighestScoringPlayer() {
-        int highestTotal = 0;
-        Player highestScoringPlayer = null;
-        for (Player opponent : this.opponents) {
-            int playerTotal = 0;
-            for (Card card : opponent.returnCards()) {
-                playerTotal += card.getValueFromEnum();
-
-            }
-            if (playerTotal > highestTotal) {
-                highestTotal = playerTotal;
-                highestScoringPlayer = opponent;
-            }
-        }
-//        return highestTotal;
-        return highestScoringPlayer;
-    }
+//    public Player returnHighestScoringPlayer() {
+//        int highestTotal = 0;
+//        Player highestScoringPlayer = null;
+//        for (Player opponent : this.opponents) {
+//            int playerTotal = 0;
+//            for (Card card : opponent.returnCards()) {
+//                playerTotal += card.getValueFromEnum();
+//
+//            }
+//            if (playerTotal > highestTotal) {
+//                highestTotal = playerTotal;
+//                highestScoringPlayer = opponent;
+//            }
+//        }
+////        return highestTotal;
+//        return highestScoringPlayer;
+//    }
 
     public void dealToOpponent(Card card1, Card card2) {
         for(Player player: this.opponents) {
@@ -143,6 +116,36 @@ public class Dealer {
             }
         }
         return PlayerWins;
+    }
+
+    public void dealThirdCardToPlayer(String option, Player player) {
+        if (option == "twist") {
+            this.shuffleDeck();
+            Card card = this.deckOfCards.get(0);
+            player.addCard(card);
+        }
+    }
+
+    public void chooseIfTwistorStick() {
+        int dealerTotal = 0;
+        for (Card card : this.ownCards) {
+            dealerTotal += card.getValueFromEnum();
+        }
+        if (dealerTotal < 16) {
+            this.twist();
+        } else {
+            this.stick();
+        }
+    }
+
+    public void twist() {
+        this.shuffleDeck();
+        Card card = this.deckOfCards.get(0);
+        this.ownCards.add(card);
+    }
+
+    public void stick() {
+        this.returnDealerTotal();
     }
 
 

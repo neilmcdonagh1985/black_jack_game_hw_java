@@ -6,11 +6,17 @@ public class Player {
         private ArrayList<Card> cards;
         private String name;
         private Card card;
+        private Boolean hasChosenToStick;
 
 
         public Player(String name) {
             this.name = name;
             this.cards = new ArrayList<Card>();
+            this.hasChosenToStick = false;
+        }
+
+        public boolean hasChosenToStick() {
+            return this.hasChosenToStick;
         }
 
 
@@ -18,34 +24,14 @@ public class Player {
             return this.name;
         }
 
-        public Card getCards() {
-            for (Card card : this.cards) {
-                return card;
-            }
-            return card;
-        }
-
         public ArrayList<Card> returnCards() {
             return this.cards;
-//            ArrayList<Card> cards = new ArrayList<Card>();
-//            return(cards);
         }
-
-
-
-//        public int getTotalValueOfCards() {
-//            int total = 0;
-//            for (Card card : this.cards) {
-//                total += card.getValueFromEnum();
-//            }
-//            return total;
-//        }
 
         public int cardCount() {
             return this.cards.size();
 
         }
-
 
         public void addCard(Card card) {
             this.cards.add(card);
@@ -54,6 +40,14 @@ public class Player {
         public void receiveInitialBlackJackCards(Card card1, Card card2) {
             this.cards.add(card1);
             this.cards.add(card2);
+        }
+
+        public void twistOrStick(Dealer dealer, String option) {
+            if (option == "twist") {
+                dealer.dealThirdCardToPlayer("twist", this);
+            } else {
+                this.hasChosenToStick = true;
+            }
         }
 
 

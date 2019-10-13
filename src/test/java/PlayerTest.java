@@ -9,19 +9,26 @@ public class PlayerTest {
     private Deck deck;
     private Card card1;
     private Card card2;
+    private Dealer dealer;
 
     @Before
     public void before() {
-        player1 = new Player("Tom");
+        player1 = new Player("Alison");
         deck = new Deck();
         card1 = new Card(SuitType.SPADES, RankType.JACK);
         card2 = new Card(SuitType.DIAMONDS, RankType.FIVE);
+        dealer = new Dealer();
 
     }
 
     @Test
+    public void CheckIfHasChosenToStick() {
+        assertEquals(false, player1.hasChosenToStick());
+    }
+
+    @Test
     public void hasName() {
-       assertEquals("Tom", player1.getName());
+       assertEquals("Alison", player1.getName());
    }
 
    @Test
@@ -32,27 +39,30 @@ public class PlayerTest {
    @Test
    public void canCountCards() {
         player1.addCard(card1);
-        assertEquals(1, player1.cardCount());
+        player1.addCard(card2);
+        assertEquals(2, player1.cardCount());
    }
 
    @Test
     public void canAddCard() {
         player1.addCard(card1);
-        assertEquals(card1, player1.getCards());
+        assertEquals(1, player1.cardCount());
    }
 
-   @Test
-    public void canGetCards() {
+    @Test
+    public void canTwist() {
         player1.addCard(card1);
         player1.addCard(card2);
-        assertEquals(card1, player1.getCards());
-   }
+        player1.twistOrStick(dealer, "twist");
+        assertEquals(3, player1.cardCount());
+    }
 
-//   @Test
-//    public void canGetTotalValueOfCards() {
-//       player1.addCard(card1);
-//       player1.addCard(card2);
-//       assertEquals(15, player1.getTotalValueOfCards());
-//   }
+    @Test
+    public void canStick() {
+        player1.addCard(card1);
+        player1.addCard(card2);
+        player1.twistOrStick(dealer, "stick");
+        assertEquals(true, player1.hasChosenToStick());
+    }
 
 }

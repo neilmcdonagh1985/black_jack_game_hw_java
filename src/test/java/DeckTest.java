@@ -21,11 +21,11 @@ public class DeckTest {
         assertEquals(0, deck.cardCount());
     }
 
-    @Test
-    public void canAddCardToDeck() {
-        deck.addCardToDeck(card1);
-        assertEquals(1, deck.cardCount());
-    }
+//    @Test
+//    public void canAddCardToDeck() {
+//        deck.addCardToDeck(card1);
+//        assertEquals(1, deck.cardCount());
+//    }
 
     @Test
     public void canPopulateDeck() {
@@ -33,10 +33,10 @@ public class DeckTest {
         assertEquals(52, deck.cardCount());
     }
 
-    @Test
-    public void canShuffleCards() {
-        assertEquals(true, deck.shuffle());
-    }
+//    @Test
+//    public void canShuffleCards() {
+//        assertEquals(true, deck.shuffle());
+//    }
 
     @Test
     public void canDeal() {
@@ -44,10 +44,10 @@ public class DeckTest {
         assertEquals(5, player1.cardCount());
     }
 
-    @Test
-    public void canPickTopCard() {
-        deck.pickTopCard();
-        assertEquals(1, deck.pickedCardCount());
-    }
+//    @Test
+//    public void canPickTopCard() {
+//        deck.pickTopCard();
+//        assertEquals(1, deck.pickedCardCount());
+//    }
 
 }
