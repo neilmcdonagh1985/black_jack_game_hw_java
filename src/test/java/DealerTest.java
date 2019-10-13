@@ -131,7 +131,7 @@ public class DealerTest {
         dealer.acceptNewOpponent(player2);
         dealer.dealToOpponent(card1, card2);
         dealer.dealToSelf(card3, card4);
-        
+        assertEquals("Player wins", dealer.findHigherHand());
     }
 
 //    @Test

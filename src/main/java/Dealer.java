@@ -126,21 +126,23 @@ public class Dealer {
         this.ownCards.add(card4);
     }
 
-    public int findHigherHand() {
+    public String findHigherHand() {
+        String DealerWins = "Dealer wins";
         int dealerTotal = 0;
         for (Card card : this.ownCards) {
             dealerTotal += card.getValueFromEnum();
         }
+        String PlayerWins = "Player wins";
         int playerTotal = 0;
         for (Player player : this.opponents) {
             for (Card card : player.returnCards()) {
                 playerTotal += card.getValueFromEnum();
             }
             if (dealerTotal > playerTotal) {
-                return dealerTotal;
+                return DealerWins;
             }
         }
-        return playerTotal;
+        return PlayerWins;
     }
 
 

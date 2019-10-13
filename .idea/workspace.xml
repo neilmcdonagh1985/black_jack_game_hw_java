@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fea43d70-7e9e-404b-8b87-2d15de9bf971" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DealerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -112,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dealer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="125" column="33" lean-forward="true" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+            <state relative-caret-position="390">
+              <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#243#244#0" expanded="true" />
@@ -134,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/DealerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+            <state relative-caret-position="276">
+              <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,8 +195,8 @@
         <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Player.java" />
-        <option value="$PROJECT_DIR$/src/test/java/DealerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dealer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DealerTest.java" />
       </list>
     </option>
   </component>
@@ -296,21 +295,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DealerTest.canFindHigherHand">
+  <component name="RunManager" selected="JUnit.DealerTest.canRevealPersonWithHigherHand">
     <configuration name="All in CardGameLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CardGameLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DealerTest.canDeal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CardGameLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DealerTest" />
-      <option name="METHOD_NAME" value="canDeal" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -345,13 +334,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DealerTest.canRevealPersonWithHigherHand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CardGameLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DealerTest" />
+      <option name="METHOD_NAME" value="canRevealPersonWithHigherHand" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DealerTest.canRevealPersonWithHigherHand" />
         <item itemvalue="JUnit.DealerTest.canFindHigherHand" />
         <item itemvalue="JUnit.All in CardGameLab" />
         <item itemvalue="JUnit.DealerTest.canDealToSelf" />
         <item itemvalue="JUnit.DealerTest.canDealtoOpponent" />
-        <item itemvalue="JUnit.DealerTest.canDeal" />
       </list>
     </recent_temporary>
   </component>
@@ -369,9 +368,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DealerTest_canReturnOpponentTotal - 2019.10.13 at 12h 02m 09s.xml">
-      <configuration name="DealerTest.canReturnOpponentTotal" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DealerTest_canReturnWinner - 2019.10.13 at 12h 05m 32s.xml">
       <configuration name="DealerTest.canReturnWinner" configurationId="JUnit" />
     </history-entry>
@@ -399,6 +395,9 @@
     <history-entry file="All_in_CardGameLab - 2019.10.13 at 13h 06m 28s.xml">
       <configuration name="All in CardGameLab" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DealerTest_canFindHigherHand - 2019.10.13 at 13h 11m 17s.xml">
+      <configuration name="DealerTest.canFindHigherHand" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -413,7 +412,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30547947" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30547947" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -638,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dealer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="125" column="33" lean-forward="true" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+        <state relative-caret-position="390">
+          <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
@@ -658,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DealerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        <state relative-caret-position="276">
+          <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
