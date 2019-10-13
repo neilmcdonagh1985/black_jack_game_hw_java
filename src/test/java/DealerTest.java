@@ -30,6 +30,11 @@ public class DealerTest {
     }
 
     @Test
+    public void hasChosenToStick() {
+        assertEquals(false, dealer.hasChosenToStick());
+    }
+
+    @Test
     public void hasDeckOfCards() {
         dealer.populateDeckOfCards();
         assertEquals(52, dealer.countDeck());
@@ -74,15 +79,6 @@ public class DealerTest {
         assertEquals(2, dealer.countOwnCards());
     }
 
-//    @Test
-//    public void canFindHigherHand() {
-//        player2 = new Player("Higgy");
-//        dealer.acceptNewOpponent(player2);
-//        dealer.dealToOpponent(card1, card2);
-//        dealer.dealToSelf(card3, card4);
-//        assertEquals(19, dealer.findHigherHand());
-//    }
-
     @Test
     public void canRevealPersonWithHigherHand() {
         dealer.acceptNewOpponent(player2);
@@ -112,7 +108,7 @@ public class DealerTest {
         dealer.chooseIfTwistorStick();
         assertEquals(2, dealer.countOwnCards());
     }
-    
+
 
 
     }

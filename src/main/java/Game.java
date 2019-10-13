@@ -4,11 +4,12 @@ public class Game {
 
     private ArrayList<Player> players;
     private Player player;
+    private Dealer dealer;
 
 
-
-    public Game() {
+     public Game(Dealer dealer) {
         this.players = new ArrayList<Player>();
+        this.dealer = dealer;
     }
 
     public int playerCount() {
@@ -19,21 +20,14 @@ public class Game {
         this.players.add(player);
     }
 
-//    public Player play() {
-//
-//        int winningNumber = 0;
-//        Player winner = null;
-//        for (Player player :this.players ) {
-//            Card card = player.getCards();
-//            int playerCardValue = card.getValueFromEnum();
-//            if (playerCardValue > winningNumber) {
-//                winningNumber = playerCardValue;
-//                winner = player;
-//
-//            }
-//        }
-//        return winner;
-//    }
+    public String compareHandsAfterBothHaveStuck() {
+         for (Player player : this.players) {
+             if (player.hasChosenToStick() && dealer.hasChosenToStick()) {
+                 
+             }
+    }
+
+
 
 
 

@@ -6,13 +6,19 @@ public class Dealer {
     private ArrayList<Card> ownCards;
     private ArrayList<Card> deckOfCards;
     private ArrayList<Player> opponents;
+    private boolean hasChosenToStick;
 
 
     public Dealer() {
         this.ownCards = new ArrayList<Card>();
         this.deckOfCards = new ArrayList<Card>();
         this.opponents = new ArrayList<Player>();
+        this.hasChosenToStick = false;
 
+    }
+
+    public boolean hasChosenToStick() {
+        return this.hasChosenToStick;
     }
 
     public int countDeck() {
@@ -147,8 +153,6 @@ public class Dealer {
     public void stick() {
         this.returnDealerTotal();
     }
-
-
 
 
 

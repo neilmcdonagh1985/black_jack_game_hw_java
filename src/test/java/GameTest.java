@@ -21,12 +21,13 @@ public class GameTest {
 
     @Before
     public void before() {
-        game = new Game();
+        game = new Game(dealer);
         player1 = new Player("Caoimhe");
         player2 = new Player("Higgy");
         player3 = new Player("Nathan");
         deck = new Deck();
         dealer = new Dealer();
+
 
     }
 
@@ -43,6 +44,16 @@ public class GameTest {
         game.addPlayer(player1);
         game.addPlayer(player2);
         assertEquals(2, game.playerCount());
+    }
+
+//    @Test
+//    public void hasDealer() {
+//        assertEquals(true, game.hasDealer());
+//    }
+
+    @Test
+    public void canCompareHandsAfterBothHaveStuck() {
+        assertEquals("Player1 has the highest hand", game.compareHandsAfterBothHaveStuck);
     }
 
 }
