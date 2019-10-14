@@ -7,7 +7,7 @@ public class Game {
     private Dealer dealer;
 
 
-     public Game(Dealer dealer) {
+    public Game(Dealer dealer) {
         this.players = new ArrayList<Player>();
         this.dealer = dealer;
     }
@@ -20,15 +20,18 @@ public class Game {
         this.players.add(player);
     }
 
-    public String compareHandsAfterBothHaveStuck() {
-         for (Player player : this.players) {
-             if (player.hasChosenToStick() && dealer.hasChosenToStick()) {
-                 
-             }
-    }
-
-
-
-
-
+//    public String compareHandsAfterBothHaveStuck() {
+//         int playerTotal = 0;
+//         int dealerTotal = 0;
+//         for (Player player : this.players) {
+//             if (player.hasChosenToStick() && dealer.hasChosenToStick()) {
+//
+//             }
+//    }
+//
+//
+//
+//
+//
+//}
 }
